@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+:root{
+    --color-green: #50fa7b;
+    --color-rocket:#7159c1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: 'Roboto';
+}
+
+a, a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline yellowgreen;
+}
+
+
+header{
+    background: var(--color-rocket);
+    color: #ffffff;
+    padding: 30px;
+    font-size: 1em;
+}
+
+h1 img{
+    height: 35px;
+    vertical-align: top;
+}
+
+header ul{
+    position: absolute;
+    top: 35px;
+    right: 900px;
+    
+}
+
+header ul li{
+    font-size: 24px;
+    padding: 0 30px;
+    display: inline;
+}
+
+main{
+    text-align: center;
+    background: rgb(60, 54, 95);
+    color: #FFFFFF;
+    height: 48.9em;
+    max-height: 80%;
+}
+
+.principal p, main h1{
+    padding: 20px 0;
+}
+
+.logo{
+    border: solid 3px rgb(70, 70, 97);
+    border-radius: 200px;
+    height: 200px; 
+}
+
+main h2{
+    margin-bottom: 10px ;
+}
+
+main ul li{
+    display: inline;
+    padding: 0 30px;
+}
+
+.tecnologias, .redesociais{
+    padding: 4.23em;
+    line-height: 2em;
+}
+
+.icon{
+    height: 30px;
+    vertical-align: top;
+    margin-right: 8px;
+}
+
+footer{
+    font-size: 1.5em;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px;
+    background: #7159c1;
+}

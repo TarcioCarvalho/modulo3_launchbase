@@ -1,0 +1,51 @@
+{% extends 'layout.njk' %}
+
+{% block error %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <title>Page not found</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        body{
+            background: rgb(50, 50, 50);
+        }
+
+        h1{
+            font-size: 10em;
+            font-family: 'roboto';
+            text-align: center;
+            color: #7159c1;
+        }
+
+        p, h4{
+            font-size: 5em;
+            font-family: 'roboto';
+            text-align: center;
+            color: #7591c9;
+        }
+
+        .wrapper{
+            margin: 30vh;
+        }
+
+    </style>
+    <div class="wrapper">
+        <h4>Error</h4>
+        <h1>404</h1>
+        <p>page not found</p>
+    </div>
+</body>
+</html>
+{% endblock %}
+

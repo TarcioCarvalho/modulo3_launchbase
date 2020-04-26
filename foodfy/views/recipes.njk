@@ -1,0 +1,30 @@
+{% extends "index.njk" %}
+
+{% block header %}
+<li><a href="/about">Sobre</a></li>
+<li><a style="font-weight: bold;" href="/recipes">Receitas</a></li>
+{% endblock %}
+
+{% block content %}
+<main>
+    <section class="menu">
+        {% for recipe in recipes %}
+            <div class="card" id="{{recipe.id}}">
+                <div class="card-image">
+                    <img id="card-img" src="{{recipe.image}}">
+                </div>
+                <div class="card-content">
+                    <h3 id=card-title>{{recipe.title}}</h3>
+                    <p id="card-text">{{recipe.author}}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+</main>
+<style>
+    main{
+        height: 740px;
+    }
+</style>
+<script src="/script.js"></script>
+{% endblock %}

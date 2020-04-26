@@ -1,0 +1,37 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+{% block head %}
+
+<link rel="stylesheet" href="home.css">
+
+{% endblock %}
+<main>
+    <div class="principal">
+        <h1 class="title">Rocketseat</h1>
+        <img class="logo" src="rocketseat.jpg" alt="imagem-empresa">
+        <p>Nosso objetivo é fazer você decolar para o próximo nível, domine as tecnologias mais modernas do mercado com nosso cursos.</p>
+    </div>
+
+    <div class="tecnologias">
+        <h2>Tecnologias:</h2>
+        <ul>
+            <li><img class="icon" src="js.png">Javascript</li>
+            <li><img class="icon" src="nodejs.png">NodeJs</li>
+            <li><img class="icon" src="reactjs.png">ReactJS</li> 
+            <li><img class="icon" src="reactnative.png">React Native</li>
+        </ul>
+    </div>
+
+    <div class="redesociais">
+        <ul>
+            <h2>Comunidade:</h2>
+            <li><a class="links" target="_blank" href=""><img class="icon" src="Linkedin.png">Linkedin</a></li>
+            <li><a class="links" target="_blank" href=""><img class="icon" src="Instagram.png">Instragram</a></li>
+            <li><a class="links" target="_blank" href=""><img class="icon" src="facebook.png">Facebook</a></li>
+        </ul>
+    </div>
+</main>
+
+{% endblock %}

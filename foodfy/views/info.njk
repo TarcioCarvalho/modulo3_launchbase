@@ -1,0 +1,61 @@
+{% extends "index.njk" %}
+
+{% block header %}
+<li><a href="/about">Sobre</a></li>
+<li><a style="font-weight: bold;" href="/recipes">Receitas</a></li>
+{% endblock %}
+
+{% block content %}
+<section class="info">
+    <div class="info-image">
+        <img id="info-img" src="{{recipe.image}}">
+    </div>
+    
+    <div class="info-content">
+        <div class="references">
+            <h2 class=info-title>{{recipe.title}}</h3>
+            <p class="info-author">{{recipe.author}}</p>
+        </div>
+
+        <div class="food-content">
+            <h3>Ingredientes</h3>
+            <span class="button-hide" id="ingredients">esconder</span>
+            <div class="ingredients">
+                <div class="information">
+                    <ul>
+                        {% for ingredient in recipe.ingredients %}
+                            <li>{{ingredient}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-content">
+            <h3>Modo de preparo</h3>
+            <span class="button-hide" id="preparation">esconder</span>
+            <div class="preparation">
+                <div class="information">
+                    <ul>
+                        {% for preparation in recipe.preparation %}
+                            <li>{{preparation}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="food-content">
+            <h3>Informações adicionais</h3>
+            <span class="button-hide" id="moreinfo">esconder</span>
+            <div class="information">
+                <div class="moreinfo">
+                    <p>{{recipe.information}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<script src="/script.js"></script>
+{% endblock %}

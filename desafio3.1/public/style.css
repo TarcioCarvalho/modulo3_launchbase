@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+:root{
+    --color-green: #50fa7b;
+    --color-rocket:#7159c1;
+}
+
+a, a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline yellowgreen;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: 'Roboto';
+}
+
+header{
+    background: var(--color-rocket);
+    color: #ffffff;
+    padding: 30px;
+    font-size: 1em;
+}
+
+h1 img{
+    height: 35px;
+    vertical-align: top;
+}
+
+header ul{
+    position: absolute;
+    top: 35px;
+    right: 600px;
+    
+}
+
+header ul li{
+    font-size: 24px;
+    padding: 0 30px;
+    display: inline;
+}
+main{
+    background-color: #000;
+    height: 789px;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 100%;
+    align-items: center;
+}
+
+.card{
+    max-width: 940px;
+    align-items: center;
+    background-color: rgba(10, 10, 10);
+    border: solid 2px rgba(70, 70, 70);
+    color: #ffffff;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 100px 0;
+    
+}
+
+.card .small{
+    padding: 0 60px;
+}
+
+.card .medium{
+    padding: 0 50px;
+}
+
+.card .big{
+    padding: 0 10px;
+}
+
+.card:hover{
+    border-color: yellowgreen;
+}
+
+/*--- modal-overlay---*/
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: #fff;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    margin: 5vh auto;
+
+}
+.maximize-modal{
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    top: 7px;
+}
+
+.close-modal{
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.maximize{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+iframe{
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 6%;
+}
+
+footer{
+    text-align: center;
+    color: #ffffff;
+    padding: 30px;
+    font-size: 18px;
+    background: var(--color-rocket);
+}

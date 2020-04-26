@@ -1,0 +1,183 @@
+@import"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap";
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main, header{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 30px 0;
+}
+
+header h1{
+    vertical-align: top;
+}
+
+header ul{
+    position: absolute;
+    top: 35px;
+    left: 40em;
+}
+
+header ul li{
+    display: inline;
+    padding: 0 30px;
+}
+
+.recipe{
+    background: #FBDFDB;
+    border-radius: 30px;
+    line-height: 1.8;
+    padding: 110px 0;
+    max-height: 360px;
+    font-size: 18px;
+}
+
+.recipe-image{
+    position: absolute;
+    top: 165px;
+    right: 30%;
+}
+
+.recipe-content{
+    vertical-align: middle;
+    padding: 0 50px;
+    font-size: 18px;
+}
+
+.recipe h2{
+    font-size: 32px;
+}
+
+.h2menu{
+    font-size: 24px;
+    padding: 40px 0 15px 0;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.card h3{
+    font-size: 18px;
+}
+
+.card p{
+    font-size: 14px;
+}
+
+.card-image img{
+    margin: 15px 0;
+    height: 140px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+footer{
+    margin-top: 50px;
+    color: #999999;
+    background: #eeeeee;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/*---About---*/
+.about{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.about p{
+    line-height: 1.5;
+}
+
+.about h2{
+    padding: 30px 0;
+}
+
+.about-foody h2{
+    padding-top: 0;
+}
+
+/* --- info-Recipes ---*/
+.info div{
+    margin: 30px 0;
+}
+
+.food-content{
+    position: relative;
+}
+
+.info-image img{
+    height: 280px;
+    border-radius: 15px;
+}
+
+.info-title, .info-author{
+    text-align: center;    
+}
+
+.info-title{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.info-author{
+    color: #777777;
+    font-size: 20px;
+}
+
+.info h3{
+    color: #111111;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.info li, .info p{
+    color: #444444;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.info li{
+    margin: 0 0 0 18px;
+    list-style-type: disc;
+}
+
+.info span{
+    position: absolute;
+    top: 12px;
+    color: #999999;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+#ingredients{
+    left: 145px;
+}
+
+#preparation{
+    left: 193px;
+}
+
+#moreinfo {
+    left: 260px;
+}
+
+/*--- hide & show ---*/
+.information.none{
+    display: none;
+}
